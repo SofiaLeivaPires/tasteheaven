@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taste Haven🍝</title>
-  </head> 
+    <title>Taste Haven</title>
+
   <!-- Shift alt seta pra baixo - copia -->
   <meta name="description" content=""> <!-- A meta ajuda a descrever embaixo da busca, forma de melhorar a busca -->
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link rel="icon" href="">
+  <link rel="icon" href="assets/img/restaurante.png">
 
   <!-- Fonts -->
   <!-- CSS Bootstrap Files-->
@@ -21,11 +21,15 @@
   <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- CSS Main -->
+  <link rel="stylesheet" href="css/main.css">
 
-
+  </head> 
   <body>
     <header id="header" class="header">
       <div class="topbar d-flex align-items-center"> <!--  -->
+
+
         <div class="container d-flex justify-content-center justify-content-md-between"> <!-- container = content -->
             <div class="d-none d-md-flex align-items-center">
 
@@ -46,10 +50,45 @@
       
       <div class="branding d-flex align-items-center"> 
 
-        <div class="container position-relative d-flex justify-content-end">
-            <a href="logo-d-flex align-items-center me-auto "></a>
+        <div class="container position-relative d-flex align-items-center justify-content-end">
+
+            <a href="" class="align-items-center me-auto"  >
             <img src="assets/img/logo.png" alt="">
-        </div>
+            </a>
+            
+            <!-- menu -->
+
+            <nav>
+              <ul>
+                <li><a href=" "> Home </a> </li>
+                <li><a href=" "> Sobre </a> </li>
+                <li><a href=" "> Serviços </a> </li>
+                <li><a href=" "> Departamentos </a> </li>
+                <li><a href=" "> Medicos </a> </li>
+                <li><a href=" "> Contatos </a> </li>
+                <li><a href=" "> Mais Opções </a>
+                  <ul>
+                    <li>Opção 1</li>
+                    <li> Opção 2 </li>
+                    <li> Submenu </li>
+                      <ul>
+                        <li> Submenu 1</li>
+                        <li> Submenu 2</li>
+                      </ul>
+                    </li> <!--Fim Submenu-->
+                  </ul>
+                </li> <!--Fim Mais Opções-->
+                                                     
+              </ul>
+
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"> </i> <!--Menu Hamburguer (faz parte do bootstrap icons)/ Alterna de lista pra x/ d-xl-none serve para remover o display em telas grandes -->
+            </nav>
+
+            <a href="" class="cta-btn">
+              Agende uma Consulta
+            </a>
+
+        </div> <!--Fim container-->
 
         <!-- div.class(nome) pra atalho div#.choco -->
       </div> <!-- fim branding -->
