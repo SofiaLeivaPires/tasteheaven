@@ -52,37 +52,46 @@
 
         <div class="container position-relative d-flex align-items-center justify-content-end">
 
-            <a href="" class="align-items-center me-auto"  >
+            <a href="" class="logo d-flex align-items-center me-auto"  >
             <img src="assets/img/logo.png" alt="">
             </a>
             
             <!-- menu -->
-
-            <nav>
+            <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href=" "> Home </a> </li>
-                <li><a href=" "> Sobre </a> </li>
-                <li><a href=" "> Serviços </a> </li>
-                <li><a href=" "> Departamentos </a> </li>
-                <li><a href=" "> Medicos </a> </li>
-                <li><a href=" "> Contatos </a> </li>
-                <li><a href=" "> Mais Opções </a>
+                <li>  <a href="#Hero"> Home </a> </li>
+                <li>  <a href="#Sobre"> Sobre </a></li>
+                <li>  <a href="#Serviços"> Serviços </a></li>
+                <li>  <a href="#Depatamento"> Departamentos </a></li>
+                <li>  <a href="#Médicos"> Médicos </a></li>
+                <li>  <a href="#Contatos"> Contatos </a></li>
+                <li class="dropdown">
+                  <a href="#"><span>Mais Opções</span> 
+                    <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li>Opção 1</li>
-                    <li> Opção 2 </li>
-                    <li> Submenu </li>
-                      <ul>
-                        <li> Submenu 1</li>
-                        <li> Submenu 2</li>
-                      </ul>
-                    </li> <!--Fim Submenu-->
-                  </ul>
-                </li> <!--Fim Mais Opções-->
-                                                     
-              </ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li class="dropdown">
+                      <a href="#"><span>Submenu</span> 
+                        <i class="bi bi-chevron-down "></i> 
+                      </a>
 
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"> </i> <!--Menu Hamburguer (faz parte do bootstrap icons)/ Alterna de lista pra x/ d-xl-none serve para remover o display em telas grandes -->
-            </nav>
+                      <ul>
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>           
+                      </ul>
+
+                    </li>      <!-- Fim submenu -->                  
+                </li> <!-- Fim Mais Opções-->   
+
+
+                <li><a href="#contact">Contato</a></li>
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
 
             <a href="" class="cta-btn">
               Agende uma Consulta
@@ -97,10 +106,10 @@
     <!--  fim header - ALT SHIFT A -->
 
     <main>
-      <div>Titulo - Interface Web</div>
+      <div></div>
     </main>
     <footer>
-      <div>TasteHaven - 11972227452</div>
+      <div></div>
     </footer>
   </body>
 </html>
