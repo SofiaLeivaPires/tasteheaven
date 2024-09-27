@@ -330,6 +330,28 @@ a {
   font-weight: 700;
 }
 
+.hero .carousel-control-prev {
+  justify-content: start;
+}
+
+.hero .carousel-control-next {
+  justify-content: end;
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: blue;
+  font-size: 26px;
+  color: red;
+  border-radius: 50px;
+  transition: .3s;
+  width: 54px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 @media (max-height:500px), (max-width:500px) {
     .hero .carousel {
         min-height: 100vh;
