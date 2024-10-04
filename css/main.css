@@ -1,7 +1,7 @@
 :root {
-    --background-color: rgb(167, 164, 164) ; /*Variável css*/
+    --background-color: rgb(138, 136, 136) ; /*Variável css*/
     --nav-fundo: rgb(34, 32, 32);
-    --texto-default: #ffffff;
+    --texto-default: #000000;
     --titulo-color: #ececec;
     --nav-color: #eeeeee;
     --nav-hover-color: #000000;
@@ -11,6 +11,7 @@
     --nav-dropdown-hover-color: #3fbbc0; 
     --nav-bg-topbar: #c7c7c7;
     --nav-color2: #ebebeb;
+    --accent-color: #00c3ff;
     /* Elemento color só pra texto */
 }
 
@@ -30,7 +31,7 @@ a {
 
 /* HEADER */
 .header {
-    color: var(--texto-default);
+    color: var(--titulo-color);
     background: var(--background-color);
     box-shadow: 0px /* eixo x */ 5px /* eixo y */15px /* sombra */ rgba(0, 0, 0, 0.2);   /* Voltar aqui */
 }
@@ -339,6 +340,12 @@ a {
   margin-bottom: 20px;
   font-size: 36px;
   font-weight: 700;
+  color: #e6e5e5;
+}
+
+.hero p {
+  color: #e9dddd;
+
 }
 
 .hero .carousel-control-prev {
@@ -471,6 +478,8 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
+  color: #000000;
+
 }
 
 .section-title h2 {
@@ -479,6 +488,8 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #000000;
+
 }
 
 .section-title h2:after {
@@ -496,12 +507,48 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+  
 }
 
 /*  About  */
 .about .content h3 {
   font-size: 1.75rem;
+  /* Multiplicar *16 ou dividir /16 */
   font-weight: 700;
-  
+  color: #000000;
 }
 
+.about .content ul {
+  list-style: none;
+  padding:0 ;
+}
+
+.about .content ul li {
+  padding: 10px 0 0 0;
+  display: flex;
+}
+
+.about .content ul i {
+  color: #5bb8bb;
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+.about .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+
+/* Pulsating Play Button */
+.pulsating-play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+ 
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
