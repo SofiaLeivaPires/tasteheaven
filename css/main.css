@@ -6,7 +6,7 @@
     --nav-color: #eeeeee;
     --nav-hover-color: #000000;
     --nav-mobile-background: #ebebeb;
-    --nav-dropdown-background: #345455;
+    --nav-dropdown-background: #5bb8bb;
     --nav-dropdown-color: #ebebeb;
     --nav-dropdown-hover-color: #3fbbc0; 
     --nav-bg-topbar: #c7c7c7;
@@ -63,7 +63,7 @@ a {
   padding: 8px 20px;
   margin: 0 5px 0 30px; /* 0 pra cima 5 pra direita 0 pra baixo 30 pra esquerda */
   border-radius: 4px;
-  transition: ;
+  transition: 1s;
 }
 
 /* Nav menu desktop = Responsivo */
@@ -250,7 +250,7 @@ a {
   
     .navmenu .dropdown>.dropdown-active {
       display: block;
-      background-color: rgba(33, 37, 41, 0.03);
+      background-color: rgba(88, 106, 124, 0.03);
     }
   
     .mobile-nav-active {
@@ -322,7 +322,7 @@ a {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 4px solid gray;
+  border-top: 4px solid rgb(122, 179, 218);
   z-index: 3;
   margin-bottom: 50px;
 }
@@ -351,9 +351,9 @@ a {
 
 .hero .carousel-control-next-icon,
 .hero .carousel-control-prev-icon {
-  background: blue;
+  background: rgb(130, 130, 136);
   font-size: 26px;
-  color: red;
+  color: rgb(106, 228, 228);
   border-radius: 50px;
   transition: .3s;
   width: 54px;
@@ -384,4 +384,8 @@ a {
     .hero .carousel {
         min-height: 100vh;
     }
+}
+
+.accent-backgrund {
+  color: black;
 }
