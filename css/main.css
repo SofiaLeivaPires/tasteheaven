@@ -399,10 +399,40 @@ a {
 
 .featured-services .service-item .icon {
   margin-bottom: 10px;
+
+}
+
+
+.featured-services .service-item .icon i {
+  color: #3fbbc0;
   font-size: 36px;
   transition: ease-in-out 0.3s;
-  
+
 }
+
+
+.featured-services .service-item h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.featured-services .service-item h4 a {
+  color: rgb(43, 29, 247);
+}
+
+.featured-services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom:0;
+}
+
+.featured-services .service-item:hover h4 a,
+.featured-services .service-item:hover .icon i,
+.featured-services .service-item:hover p {
+  color: whitesmoke;
+}
+
 
 @media (max-height:500px), (max-width:500px) {
     .hero .carousel {
