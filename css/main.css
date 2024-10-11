@@ -1,6 +1,6 @@
 /* Google Fonts */
 :root {
-  --default-font: font-family: "Playfair Display", ;
+  --default-font: "Roboto" sans-serif ;
   --heading-font: "" ;
   --nav-font: ;
 }
@@ -652,4 +652,6 @@ section,
   margin: 0;
   font-family: var(--heading-font);
   font-size: 16px;
+  font-weight: 400;
+  color: white;
 }
