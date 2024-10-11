@@ -1,7 +1,7 @@
 /* Google Fonts */
 :root {
-  --default-font: ;
-  --heading-font: ;
+  --default-font: font-family: "Playfair Display", ;
+  --heading-font: "" ;
   --nav-font: ;
 }
 
