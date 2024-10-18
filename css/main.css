@@ -840,3 +840,56 @@ section,
 .services .service-item:hover h3 {
   color: #2293a0;
 }
+
+/* Consulta//Forms */
+.consulta .email-form {
+  width: 100%;
+}
+
+.consulta .email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.consulta .email-form input, 
+.consulta .email-form textarea,
+.consulta .email-form select {
+  color: #272727 ;
+  background-color: rgb(238, 238, 238) ;
+/*   border-radius:0 ;
+ */  box-shadow:none;
+  font-size: 14px ;
+  padding: 10px !important;
+}
+
+.consulta .email-form input::placeholder,
+.consulta .email-form textarea::placeholder,
+.consulta .email-form select::placeholder {
+  color: color-mix(in srgb, #000000, transparent 50%);
+}
+
+.consulta .email-form input:focus,
+.consulta .email-form textarea:focus,
+.consulta .email-form select:focus {
+  border-color: rgb(63, 32, 32);
+}
+
+.consulta .email-form input,
+.consulta .email-form select {
+  height: 44px;
+}
+
+.consulta .email-form textarea {
+  padding: 10px 12px;
+}
+
+.consulta .email-form button {
+  background: #01d2e9;
+  color: whitesmoke;
+  border: 0;
+  padding: 10px 35px;
+  font-size: 20px;
+  transition: 0.4s;
+  border-radius: 6px;
+}
+
+.consulta .email-form 
