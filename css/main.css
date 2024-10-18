@@ -414,7 +414,7 @@ font-weight: 700;
 }
 
 .featured-services .service-item .icon i {
-  color: #3fbbc0;
+  color: #253131;
   font-size: 36px;
   transition: ease-in-out 0.3s;
 }
@@ -426,7 +426,7 @@ font-weight: 700;
 }
 
 .featured-services .service-item h4 a {
-  color: red;
+  color: #000000;
 }
 
 
@@ -443,7 +443,7 @@ font-weight: 700;
 }
 
 .featured-services .service-item:hover:before { 
-  background:  #3fbbc0;
+  background:  #312222;
   inset: 0;
   border-radius: 0px;
 }
@@ -451,7 +451,7 @@ font-weight: 700;
 .featured-services .service-item:before {
   content: "";
   position: absolute;
-  background:  #266e70;
+  background:  #202525;
   z-index: -1;
   inset: 100% 0 0 0 ;
   transition: all 0.5s;
@@ -892,4 +892,78 @@ section,
   border-radius: 6px;
 }
 
-.consulta .email-form 
+.consulta .email-form {
+
+}
+
+
+.faq .faq-container .faq-item {
+  background: #ccc;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: ;
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #312222;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color:blueviolet;
+}
+
+.faq .faq-container .faq-active {
+  border-color: black;
+}
+
+.faq .faq-container .faq-active h3 {
+  border-color: blue;
+}
+
+.faq .faq-container .faq-active .faq-content {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: #13b6bc;
+}
+
