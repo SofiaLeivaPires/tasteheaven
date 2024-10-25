@@ -20,7 +20,7 @@
   --nav-dropdown-hover-color: #3fbbc0;
   --nav-bg-topbar: #312222;
   --nav-color2: #ebebeb;
-  --surface: #fff;
+  --surface: #353131;
   --accent-color: #3fbbc0;
 
 }
@@ -912,7 +912,7 @@ section,
 
 .equipe .team-member .social a:hover {
   color: beige;
-  background: red;
+  background: rgb(0, 217, 255);
 }
 
 .equipe .team-member .member-info {
@@ -947,8 +947,21 @@ section,
   align-items: center;
 }
 
-.equipe .team-member .social a:hover {
+.equipe .team-member:hover .social i {
+  font-size: 18px;
+  line-height: 0;
+}
 
+.equipe .team-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.equipe .team-member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 
@@ -1022,6 +1035,70 @@ section,
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: #13b6bc;
+}
+
+/* Contato */
+.contato .info-item {
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px 0 30px 0;
+}
+
+.contato .info-item i {
+  color: #ccc;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 2px dotted #0d8084;
+}
+
+.contato .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 575px) {
+  .contato .email-form {
+    padding: 20px;
+  }
+}
+
+.contato .email-form input[type=text],
+.contato .email-form input[type=email],
+.contato .email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: #195052;
+  background: #fff;
+  border-color: #00cdcd;
+}
+
+.contato .email-form {
+  background: #fffdfd;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  padding: 30px;
+}
+
+.contato .email-form button[type=submit] {
+  color: #efefef;
+  background: #00b0c4;
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contato .email-form button[type=submit]:hover {
+  background: #01d2e9;
 }
 
 /* Responsivos */
