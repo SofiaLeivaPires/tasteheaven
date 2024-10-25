@@ -13,7 +13,7 @@
   --texto-default: #444;
   --titulo-color: #363636; 
   --nav-color: #444;
-  --nav-hover-color: #3fbbc0;
+  --nav-hover-color: #000000;
   --nav-mobile-background: #ebebeb;
   --nav-dropdown-background: #195052;
   --nav-dropdown-color: #ebebeb;
@@ -100,7 +100,7 @@ a {
       padding: 18px 15px;
       font-size: 13px;
       font-family: Arial, Helvetica, sans-serif;
-      font-weight: 500;
+      font-weight: bold;
       text-transform: uppercase;
       display: flex;
       align-items: center;
@@ -359,9 +359,9 @@ font-weight: 700;
 
 .hero .carousel-control-next-icon,
 .hero .carousel-control-prev-icon {
-  background: #3fbbc0;
+  background: #1f2222;
   font-size: 26px;
-  color: red;
+  color: rgb(255, 255, 255);
   border-radius: 50px;
   transition: .3s;
   width: 54px;
@@ -371,21 +371,21 @@ font-weight: 700;
   justify-content: center;
 } 
 
-.hero .carousel-indicators {
+.hero .carousel-indicators li {
   cursor: pointer;
-  background: #444;
-  width: 12px;
-  height: 12px;
-  opacity: 1;
+  background: #ccc;
   overflow: hidden;
   border: 0;
+  width: 12px;
+  height: 12px;
   border-radius: 50px;
+  opacity: 1;
   transition: 0.3s;
 }
 
-.hero .carousel-indicators.active  {
+.hero .carousel-indicators li.active  {
   opacity: 1;
-  background: red;
+  background: #312222;
 }
 
 @media (max-height:500px), 
@@ -892,10 +892,6 @@ section,
   border-radius: 6px;
 }
 
-.consulta .email-form {
-
-}
-
 
 .faq .faq-container .faq-item {
   background: #ccc;
@@ -965,5 +961,31 @@ section,
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: #13b6bc;
+}
+
+/* Responsivos */
+@media (max-height: 500px), (max-width: 580px) {
+  .hero .carousel {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width:768px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .hero .carousel-control-next {
+    padding-right: 15px;
+  }
 }
 
